@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author: Paul Yoon
+% Based off of: https://paulyoon.xyz (resume on bottom), https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% garamond font -- same as my google docs resume
+\usepackage{ebgaramond}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{-2pt}
+      \textbf{#1} & \small#2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeCourse}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{-2pt}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\fontsize{17}{17}\selectfont Paul Yoon} \\
+      \vspace{1pt}
+      \small +1(713)-320-1032 $|$
+      \href{mailto:pauljy@stanford.edu}{\underline{pauljy@stanford.edu}} $|$
+      \href{https://linkedin.com/in/pauljinyoon{}}{\underline{linkedin.com/in/pauljinyoon}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {STANFORD UNIVERSITY}{Expected Graduation: Jun 2027}
+      {Bachelor of Science, Mathematics + minor in Music}{GPA: 3.8/4.0}
+      \vspace{5pt}
+    \resumeSubheading
+    {MENLO-ATHERTON HIGH SCHOOL}{Aug 2020 -- Jun 2023}
+    {High School Diploma}{GPA: 4.4/4.0}
+  \resumeSubHeadingListEnd
+
+%-----------Professional Experience-----------
+  \section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SUNDIAL}{Los Gatos, CA + New York City, NY}
+      {Intern}{Jul 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{TODO: Fill in text here}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {WUNDERLING LEARNING CENTER}{Jul 2024 -- Present}
+      {Tutor}{Los Altos, CA}
+      \resumeItemListStart
+        \resumeItem{TODO: Fill in text here}
+        \resumeItem{TODO: Fill in text here}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {TEAM LIMIT}{Remote/Berkeley, CA}
+      {Social Media Manager}{Aug 2021 -- Jun 2024}
+      \resumeItemListStart
+    \resumeItem{Analyzed data with Twitter analytics tools to accumulate \textbf{40,000+ followers and 30M+ impressions} on Limit’s Twitter account}
+        \resumeItem{Curated engaging social media content to build the company’s community, advertise sponsorships and grow the overall brand}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {STANFORD SCHOOL OF MEDICINE}{Stanford, CA}
+      {Research Assistant}{May 2020 -- Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Collected data and analyzed visual indicators of pain in PET/MRI scans of patients with chronic knee pain}
+        \resumeItem{Presenter at the annual meeting of the Society of Nuclear Medicine and Molecular Imaging in June 2021: “S1R PET/MRI of
+patients with chronic knee pain reveals potential pain generators not otherwise identified with standard care: Early experience”}
+\resumeItem{\textbf{Co-authored manuscript}: “Sigma-1 receptor changes in chronic knee pain: Preliminary results of ten patients using PET/MRI”}
+      \resumeItemListEnd
+      \vspace{-4pt}
+  \resumeSubHeadingListEnd
+  
+%-----------Activities-----------
+  \section{\textbf{ACTIVITIES}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {STANFORD SYMPHONY ORCHESTRA}{Stanford, CA}
+      {French Horn Player}{Sep 2023 -- Present}
+      \resumeItemListStart
+      \resumeItem{Selected as the \textbf{only freshman} for the highest level orchestra}
+      \resumeItem{Attend rehearsal 3 times a week for 1.5 hours and \textbf{perform major classical works} including Rachmaninoff, Strauss, Mahler, Brahms}
+        \resumeItem{Participate in social events, fundraising, setup and cleanup}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {KOREAN STUDENT ASSOCIATION}{Stanford, CA}
+      {Political Chair}{Sep 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Help organize and plan events related to Korean culture and other traditions}
+        \resumeItem{Organize weekly presentations about Korean politics and guide discussions}
+        \resumeItem{Attend weekly meetings, events, and other gatherings}
+        \resumeItemListEnd
+        \vspace{-4pt}
+  \resumeSubHeadingListEnd
+
+%-----------Courses-----------
+  \section{\textbf{RELEVANT COURSEWORK}}
+  \resumeSubHeadingListStart
+    \resumeCourse {Math 51 -- Linear Algebra and Differential Calculus of Several Variables}{Sep 2023 -- Dec 2023}
+    \resumeCourse {Math 52 -- Integral Calculus of Several Variables}{Jan 2024-- Mar 2024}
+    \resumeCourse {Math 53 -- Differential Equations with Linear Algebra, Fourier Methods, and Modern Applications}{Apr 2024 -- Jun 2024}
+    \resumeCourse {CS 106B -- Programming Abstractions}{Jan 2024 -- Mar 2024}
+    \resumeCourse {CS 107 -- Computer Organization and Systems}{Apr 2024 -- Jun 2024}
+    \vspace{-2pt}
+  \resumeSubHeadingListEnd
+
+%-----------Additional-----------
+    \section{\textbf{ADDITIONAL}}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \item{
+        \textbf{Technical Skills}{: \small{LaTeX (Proficient), Python, C++, C (Intermediate), Social Media Marketing (Twitter/X, Instagram)}} \\
+        \textbf{Languages}{: \small{English (Native Speaker), Spanish (Conversational), Korean (Conversational)}} \\
+        \textbf{Awards}{: \small{Winner of California Youth Symphony Senior Concerto Competition, Seal of Biliteracy (Spanish), AP Scholar with Distinction, National Merit Commended Student}} \\
+        \textbf{Projects}{: \small{Explicit/Implicit Heap Allocator, Stanford Christian Students App Development, Personal website, Neovim Configuration}} \\
+        \textbf{Other Involvement}{: \small{Stanford Christian Students, Stanford Philharmonia}} \\
+    }
+ \end{itemize}
+
+\end{document}
