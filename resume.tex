@@ -50,6 +50,7 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength{\parskip}{2px plus2mm minus2mm}
 
 % Sections formatting
 \titleformat{\section}{
@@ -71,12 +72,20 @@
   \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \vspace{-2pt}
-      \textbf{#1} & \small#2 \\
+      \textbf{\fontsize{10}{10}\selectfont #1} & \small#2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-10pt}
 }
 
 \newcommand{\resumeCourse}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{-2pt}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeCourseNew}[2]{
   \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \vspace{-2pt}
@@ -128,12 +137,14 @@
     \resumeSubheading
       {STANFORD UNIVERSITY}{Expected Graduation: Jun 2027}
       {Bachelor of Science, Mathematics, Minor in Music}{GPA: 3.8/4.0}
-      \vspace{5pt}
-    \resumeSubheading
-    {MENLO-ATHERTON HIGH SCHOOL}{Aug 2020 -- Jun 2023}
-    {High School Diploma}{GPA: 4.4/4.0}
-  \resumeSubHeadingListEnd
+      \vspace{1pt}
+    \item{\textbf{\fontsize{10}{10}\selectfont Relevant Coursework}{: \small{Linear Algebra, Differential and Integral Calculus of Several Variables, Differential Equations with Fourier}}
+    }
+    \vspace{-8pt}
+    \resumeCourseNew{Methods, Programming Abstractions, Computer Organization and Systems, Real Analysis, Probability Theory for Computer Scientists}{}
+    \vspace{-1pt}
 
+    \resumeSubHeadingListEnd
 %-----------Professional Experience-----------
   \section{\textbf{PROFESSIONAL EXPERIENCE}}
   \resumeSubHeadingListStart
@@ -142,21 +153,29 @@
       {SUNDIAL}{Los Gatos, CA}
       {Data Science Intern}{Jul 2024 -- Sep 2024}
       \resumeItemListStart
-        \resumeItem{Analyzed user fraud for Sundial clients through SQL queries and the Sundial product, optimizing detection thresholds based on key metrics and false positive rates}
+        \resumeItem{Streamlined user fraud analysis process for Sundial’s 20+ clients using Apache Spark SQL, reducing false positives and improving accuracy through optimized detection thresholds based on user behavior patterns.}
         \resumeItem{Refined Sundial's existing machine learning model (Prophet), improving forecasting and data decomposition accuracy by automating optimization of tuning parameters.}
+        \resumeItem{Utilized Sundial’s product internally to identify pain points to drive 5+ product enhancements for a better end user experience}
       \resumeItemListEnd
       
     \resumeSubheading
-      {WUNDERLING LEARNING CENTER}{Jul 2024 -- Sep 2024}
-      {Mathematics, Reading, Writing Tutor}{Los Altos, CA}
+      {WUNDERLING LEARNING CENTER}{Los Altos, CA}
+      {Mathematics, Reading, Writing Tutor}{Jul 2024 -- Sep 2024}
       \resumeItemListStart
-        \resumeItem{Tutored students from K-12 and adjusted teaching methods to individual needs, driving rapid improvements}
+        \resumeItem{Tutored 50+ students from K-12 and adjusted teaching methods to individual needs, driving rapid improvements}
         \resumeItem{Created Slingerland-based learning materials for practicing word sounds, incorporating stories and tailored exercises}
       \resumeItemListEnd
     
     \resumeSubheading
       {TEAM LIMIT}{Remote/Berkeley, CA}
-      {Social Media Manager}{Aug 2021 -- Jun 2024}
+      {General Manager}{Jun 2023 -- Jun 2024}
+      \resumeItemListStart
+        \resumeItem{Directed sponsorship and marketing campaigns for 5 companies after outreach to 200+ brands, tripling the team's revenue}
+        \resumeItem{Led content ideation for 50+ videos and created 50+ evidence-based documents, leveraging YouTube trends and competitor analysis to optimize ideation strategy and maximize engagement.}
+    \resumeItemListEnd
+    \vspace{-4px}
+    \resumeSubSubheading
+      {Social Media Manager}{Aug 2021 -- Jun 2023}
       \resumeItemListStart
     \resumeItem{Analyzed data with Twitter analytics tools to accumulate 40,000+ followers and 30M+ impressions on Limit’s Twitter account}
         \resumeItem{Curated engaging social media content to build the company’s community, advertise sponsorships and grow the overall brand}
@@ -173,6 +192,26 @@ patients with chronic knee pain reveals potential pain generators not otherwise 
       \resumeItemListEnd
       \vspace{-2pt}
   \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+  \section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Explicit/Implicit Heap Allocator}{Jun 2024}
+    {Unix, C}{}
+    \resumeItemListStart
+        \resumeItem{Implemented a heap allocator in C with the "malloc", "realloc", and "free" functions optimizing for throughput and memory utilization}
+        \resumeItem{Utilized an explicit list of nodes to dynamically assign best locations for new memory requests and reduce memory fragmentation}
+        \resumeItem{Achieved 91\% memory utilization via testing on standard memory request scripts from GDB, Firefox, and more }
+    \resumeItemListEnd
+    \resumeSubheading
+    {Stanford Christian Students App}{Jun 2024 - Present}
+    {React Native, Typescript}{}
+    \resumeItemListStart
+        \resumeItem{Implementing 10+ UI changes for a more streamlined user experience}
+        \resumeItem{Maintaining code readability, function decomposition, and bug fixing among the app's 50+megabyte codebase}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
   
 %-----------Activities-----------
   \section{\textbf{ACTIVITIES}}
@@ -182,41 +221,28 @@ patients with chronic knee pain reveals potential pain generators not otherwise 
       {STANFORD SYMPHONY ORCHESTRA}{Stanford, CA}
       {French Horn Player}{Sep 2023 -- Present}
       \resumeItemListStart
-      \resumeItem{Selected as the only freshman for the highest level orchestra}
+      \resumeItem{Only freshman hornist for the highest level orchestra on campus}
       \resumeItem{Attend rehearsal 3 times a week for 1.5 hours and perform major classical works including Rachmaninoff, Strauss, Mahler, Brahms}
-        \resumeItem{Participate in social events, fundraising, setup and cleanup}
       \resumeItemListEnd
       
     \resumeSubheading
       {KOREAN STUDENT ASSOCIATION}{Stanford, CA}
       {Political Chair}{Sep 2023 -- Present}
       \resumeItemListStart
-        \resumeItem{Help organize and plan events related to Korean culture and other traditions}
+        \resumeItem{Help organize and plan weekly events related to Korean culture and other traditions}
         \resumeItem{Organize weekly presentations about Korean politics and guide discussions}
-        \resumeItem{Attend weekly meetings, events, and other gatherings}
         \resumeItemListEnd
         \vspace{-2pt}
-  \resumeSubHeadingListEnd
-
-%-----------Courses-----------
-  \section{\textbf{RELEVANT COURSEWORK}}
-  \resumeSubHeadingListStart
-    \resumeCourse {Math 51 -- Linear Algebra and Differential Calculus of Several Variables}{Sep 2023 -- Dec 2023}
-    \resumeCourse {Math 52 -- Integral Calculus of Several Variables}{Jan 2024-- Mar 2024}
-    \resumeCourse {Math 53 -- Differential Equations with Linear Algebra, Fourier Methods, and Modern Applications}{Apr 2024 -- Jun 2024}
-    \resumeCourse {CS 106B -- Programming Abstractions}{Jan 2024 -- Mar 2024}
-    \resumeCourse {CS 107 -- Computer Organization and Systems}{Apr 2024 -- Jun 2024}
   \resumeSubHeadingListEnd
 
 %-----------Additional-----------
     \section{\textbf{ADDITIONAL}}
  \begin{itemize}[leftmargin=0in, label={}]
     \item{
-        \textbf{Technical Skills}{: \small{LaTeX (Proficient), Python, C++, C (Intermediate), Social Media Marketing (Twitter/X, Instagram)}} \\
+        \textbf{Technical Skills (Programming)}{: \small{Python, SQL, TypeScript, React Native, Markdown, C++, C, HTML/CSS}} \\
+        \textbf{Technical Skills (Developer Tools)}{: \small{LaTeX, Vim, Unix, Git, QT Creator, Jupyter Notebook}} \\
         \textbf{Languages}{: \small{English (Native Speaker), Spanish (Conversational), Korean (Conversational)}} \\
-        \textbf{Awards}{: \small{Winner of California Youth Symphony Senior Concerto Competition, Seal of Biliteracy (Spanish), AP Scholar with Distinction, National Merit Commended Student}} \\
-        \textbf{Projects}{: \small{Explicit/Implicit Heap Allocator, Stanford Christian Students App Development, Personal website, Neovim Configuration}} \\
-        \textbf{Other Involvement}{: \small{Stanford Christian Students, Stanford Philharmonia}} \\
+        \textbf{Other Involvement}{: \small{Stanford Christian Students, Stanford Philharmonia, Stanford Student Technical Support}} \\
     }
  \end{itemize}
 
