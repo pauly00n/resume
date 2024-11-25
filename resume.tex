@@ -5,7 +5,7 @@
 % License: MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -69,10 +69,10 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \vspace{-2pt}
-      \textbf{\fontsize{10}{10}\selectfont #1} & \small#2 \\
+      \textbf{\fontsize{11}{11}\selectfont #1} & \small#2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-10pt}
 }
@@ -137,11 +137,11 @@
     \resumeSubheading
       {STANFORD UNIVERSITY}{Expected Graduation: Jun 2027}
       {Bachelor of Science, Mathematics, Minor in Music}{GPA: 3.8/4.0}
-      \vspace{1pt}
-    \item{\textbf{\fontsize{10}{10}\selectfont Relevant Coursework}{: \small{Linear Algebra, Differential and Integral Calculus of Several Variables, Differential Equations with Fourier}}
+      \vspace{2pt}
+    \item{\textbf{\fontsize{11}{11}\selectfont Relevant Coursework}{: \small{Linear Algebra, Differential and Integral Calculus of Several Variables, Differential Equations with}}
     }
     \vspace{-8pt}
-    \resumeCourseNew{Methods, Programming Abstractions, Computer Organization and Systems, Real Analysis, Probability Theory for Computer Scientists}{}
+    \resumeCourseNew{Fourier Methods, Computer Organization and Systems, Real Analysis, Probability Theory for Computer Scientists}{}
     \vspace{-1pt}
 
     \resumeSubHeadingListEnd
@@ -150,45 +150,33 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {SUNDIAL}{Los Gatos, CA}
+      {SUNDIAL}{Palo Alto, CA}
       {Data Science Intern}{Jul 2024 -- Sep 2024}
       \resumeItemListStart
-        \resumeItem{Streamlined user fraud analysis process for Sundial’s 20+ clients using Apache Spark SQL, reducing false positives and improving accuracy through optimized detection thresholds based on user behavior patterns.}
-        \resumeItem{Refined Sundial's existing machine learning model (Prophet), improving forecasting and data decomposition accuracy by automating optimization of tuning parameters.}
+      \vspace{1pt}
+        \resumeItem{Developed robust user fraud detection system for using Apache Spark SQL, slashing false positives by 40\% and boosting accuracy through behavior-based thresholds}
+        \resumeItem{Enhanced forecasting precision of Prophet ML model by up to 120\% via automated parameter tuning, significantly improving data decomposition and predictive capabilities}
         \resumeItem{Utilized Sundial’s product internally to identify pain points to drive 5+ product enhancements for a better end user experience}
       \resumeItemListEnd
       
     \resumeSubheading
       {WUNDERLING LEARNING CENTER}{Los Altos, CA}
       {Mathematics, Reading, Writing Tutor}{Jul 2024 -- Sep 2024}
+      \vspace{1pt}
       \resumeItemListStart
         \resumeItem{Tutored 50+ students from K-12 and adjusted teaching methods to individual needs, driving rapid improvements}
         \resumeItem{Created Slingerland-based learning materials for practicing word sounds, incorporating stories and tailored exercises}
       \resumeItemListEnd
     
     \resumeSubheading
-      {TEAM LIMIT}{Remote/Berkeley, CA}
-      {General Manager}{Jun 2023 -- Jun 2024}
-      \resumeItemListStart
-        \resumeItem{Directed sponsorship and marketing campaigns for 5 companies after outreach to 200+ brands, tripling the team's revenue}
-        \resumeItem{Led content ideation for 50+ videos and created 50+ evidence-based documents, leveraging YouTube trends and competitor analysis to optimize ideation strategy and maximize engagement.}
-    \resumeItemListEnd
-    \vspace{-4px}
-    \resumeSubSubheading
-      {Social Media Manager}{Aug 2021 -- Jun 2023}
-      \resumeItemListStart
-    \resumeItem{Analyzed data with Twitter analytics tools to accumulate 40,000+ followers and 30M+ impressions on Limit’s Twitter account}
-        \resumeItem{Curated engaging social media content to build the company’s community, advertise sponsorships and grow the overall brand}
-    \resumeItemListEnd
-
-    \resumeSubheading
       {STANFORD SCHOOL OF MEDICINE}{Stanford, CA}
       {Research Assistant}{May 2020 -- Jun 2023}
+      \vspace{1pt}
       \resumeItemListStart
-        \resumeItem{Collected data and analyzed visual indicators of pain in PET/MRI scans of patients with chronic knee pain}
+        \resumeItem{Collected data and analyzed visual indicators of pain in PET/MRI scans of 15 patients with chronic knee pain}
         \resumeItem{Presenter at the annual meeting of the Society of Nuclear Medicine and Molecular Imaging in June 2021: “S1R PET/MRI of
 patients with chronic knee pain reveals potential pain generators not otherwise identified with standard care: Early experience”}
-\resumeItem{Co-authored manuscript: “Sigma-1 receptor changes in chronic knee pain: Preliminary results of ten patients using PET/MRI”}
+\resumeItem{Co-authored manuscript: “Sigma-1 receptor changes in chronic knee pain: Preliminary results of 15 patients using PET/MRI”}
       \resumeItemListEnd
       \vspace{-2pt}
   \resumeSubHeadingListEnd
@@ -199,14 +187,17 @@ patients with chronic knee pain reveals potential pain generators not otherwise 
     \resumeSubheading
     {Explicit/Implicit Heap Allocator}{Jun 2024}
     {Unix, C}{}
+    \vspace{1pt}
     \resumeItemListStart
-        \resumeItem{Implemented a heap allocator in C with the "malloc", "realloc", and "free" functions optimizing for throughput and memory utilization}
+        \resumeItem{Implemented the "malloc", "realloc", and "free" functions optimizing for request throughput and memory utilization}
         \resumeItem{Utilized an explicit list of nodes to dynamically assign best locations for new memory requests and reduce memory fragmentation}
-        \resumeItem{Achieved 91\% memory utilization via testing on standard memory request scripts from GDB, Firefox, and more }
+        \resumeItem{Achieved 91\% memory utilization via testing on heap activity memory requests from Emacs, Cmake, Firefox, and more }
     \resumeItemListEnd
+
     \resumeSubheading
     {Stanford Christian Students App}{Jun 2024 - Present}
     {React Native, Typescript}{}
+    \vspace{1pt}
     \resumeItemListStart
         \resumeItem{Implementing 10+ UI changes for a more streamlined user experience}
         \resumeItem{Maintaining code readability, function decomposition, and bug fixing among the app's 50+megabyte codebase}
@@ -214,35 +205,38 @@ patients with chronic knee pain reveals potential pain generators not otherwise 
   \resumeSubHeadingListEnd
   
 %-----------Activities-----------
-  \section{\textbf{ACTIVITIES}}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {STANFORD SYMPHONY ORCHESTRA}{Stanford, CA}
-      {French Horn Player}{Sep 2023 -- Present}
-      \resumeItemListStart
-      \resumeItem{Only freshman hornist for the highest level orchestra on campus}
-      \resumeItem{Attend rehearsal 3 times a week for 1.5 hours and perform major classical works including Rachmaninoff, Strauss, Mahler, Brahms}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {KOREAN STUDENT ASSOCIATION}{Stanford, CA}
-      {Political Chair}{Sep 2023 -- Present}
-      \resumeItemListStart
-        \resumeItem{Help organize and plan weekly events related to Korean culture and other traditions}
-        \resumeItem{Organize weekly presentations about Korean politics and guide discussions}
-        \resumeItemListEnd
-        \vspace{-2pt}
-  \resumeSubHeadingListEnd
+%  \section{\textbf{ACTIVITIES}}
+%  \resumeSubHeadingListStart
+%
+%    \resumeSubheading
+%      {STANFORD SYMPHONY ORCHESTRA}{Stanford, CA}
+%      {French Horn Player}{Sep 2023 -- Present}
+%      \resumeItemListStart
+%      \resumeItem{Selected as the only freshman hornist for the highest level orchestra on campus}
+%      \resumeItem{Attend rehearsal 3 times a week for 1.5 hours and perform major classical works including Rachmaninoff, Strauss, Mahler, Brahms}
+%      \resumeItemListEnd
+%      
+%    \resumeSubheading
+%      {KOREAN STUDENT ASSOCIATION}{Stanford, CA}
+%      {Political Chair}{Sep 2023 -- Present}
+%      \resumeItemListStart
+%        \resumeItem{Help organize and plan weekly events related to Korean culture and other traditions}
+%        \resumeItem{Organize weekly presentations about Korean politics and guide discussions}
+%        \resumeItemListEnd
+%        \vspace{-2pt}
+%  \resumeSubHeadingListEnd
 
 %-----------Additional-----------
     \section{\textbf{ADDITIONAL}}
  \begin{itemize}[leftmargin=0in, label={}]
     \item{
         \textbf{Technical Skills (Programming)}{: \small{Python, SQL, TypeScript, React Native, Markdown, C++, C, HTML/CSS}} \\
+        \vspace{1pt}
         \textbf{Technical Skills (Developer Tools)}{: \small{LaTeX, Vim, Unix, Git, QT Creator, Jupyter Notebook}} \\
+        \vspace{1pt}
         \textbf{Languages}{: \small{English (Native Speaker), Spanish (Conversational), Korean (Conversational)}} \\
-        \textbf{Other Involvement}{: \small{Stanford Christian Students, Stanford Philharmonia, Stanford Student Technical Support}} \\
+        \vspace{1pt}
+        \textbf{Other Involvement}{: \small{Stanford Blockchain Club, Stanford Symphony Orchestra, Stanford Korean Student Association, Stanford Christian Students, Stanford Philharmonia, Stanford Student Technical Support}} \\
     }
  \end{itemize}
 
