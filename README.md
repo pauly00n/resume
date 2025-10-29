@@ -1,1 +1,1 @@
-my resume written in LaTeX
+A modified version of the template from https://github.com/sb2nov/resume
