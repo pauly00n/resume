@@ -128,21 +128,14 @@
       \small 
       +1 (713) 320-1032 $\mid$ \href{mailto:pauljy@stanford.edu}{\underline{pauljy@stanford.edu}} $\mid$ \href{https://linkedin.com/in/pauljinyoon}{\underline{linkedin.com/in/pauljinyoon}} $\mid$ \href{https://paulyoon.xyz}{\underline{paulyoon.xyz}}
 \end{center}
-
-
 %-----------EDUCATION-----------
 \section{\textbf{EDUCATION}}
   \resumeSubHeadingListStart
     \resumeSubheading
       {STANFORD UNIVERSITY}{Palo Alto, CA}
-      {Bachelor of Science, Computer Science. Minor in Music. GPA: 3.8/4.0}{Expected June 2027}
+      {Bachelor of Science, Computer Science; Minor in Music $\mid$ GPA: 3.8/4.0}{Expected June 2027}
       \vspace{2pt}
-    \item{\textbf{\fontsize{11}{11}\selectfont Relevant Coursework}{: \small{Linear Algebra, Differential, and Integral Calculus of Several Variables, Computer Organization}}
-    }
-    \vspace{-8pt}
-    \resumeCourseNew{and Systems, Algorithmic Analysis, Probability Theory for Computer Scientists, Machine Learning, Computer Vision }{}
-    \vspace{4pt}
-    \resumeSubHeadingListEnd
+        \resumeSubHeadingListEnd
 
 %-----------Professional Experience-----------
   \section{\textbf{PROFESSIONAL EXPERIENCE}}
@@ -153,8 +146,9 @@
       {Researcher -- Principal Investigator: Bao Do, MD}{Sept 2025 -- Present}
       \vspace{1pt}
       \resumeItemListStart
-        \resumeItem{Implemented a retrieval-augmented generation (RAG) pipeline linking radiology reports with case study and image retrieval across 5+ web APIs, automating $\sim$90\% of manual image search}
-        \resumeItem{Engineered feature-extraction logic deriving 8+ imaging features per report, achieving 100\% coverage (on retrieved images) of top-3 differential diagnoses across 50+ cases}
+        \resumeItem{Built an automated retrieval pipeline linking radiology reports to case images by orchestrating 5+ external APIs (Gemini, Google Images, and internal libraries), removing $\sim$90 percent of manual lookup time for clinicians}
+        \resumeItem{Implemented structured-text extraction logic to convert unformatted radiology prose into typed clinical features (location, borders, signal characteristics, enhancement), enabling consistent downstream reasoning and retrieval}
+        \resumeItem{Developed fault-tolerant request sequencing, retries, and response validation to handle high-variance API formats and ensure consistent output quality}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -163,8 +157,9 @@
       \resumeItemListStart
       \vspace{1pt}
         \resumeItem{\textit{Sundial is a Series A startup building an automated data science and product analytics tool founded by two early Meta executives, one of whom went to Sequoia Capital before founding Sundial}}
-        \resumeItem{Developed classifier identifying fraudulent users using behavior-based thresholds, reducing false positives compared to existing process by 50\% and boosting overall detection accuracy by 75\%}
-        \resumeItem{Created, trained, and tuned a time series seasonality model, outperforming existing model by 120\% as measured by mean absolute percentage error (MAPE)}
+        \resumeItem{Implemented a modular Python forecasting component using Facebook Prophet, outperforming the existing production model by 120\% (MAPE) and enabling drop-in replacement for the company’s analytics pipeline}
+        \resumeItem{Designed a lightweight anomaly detector that reduced false positives for power users, using Spark SQL on S3-backed event logs to compute behavior-based thresholds}
+        \resumeItem{Delivered clean, well-documented model code adopted directly into Sundial’s production analytics pipeline}
       \resumeItemListEnd
           \vspace{-2pt}
   \resumeSubHeadingListEnd
@@ -173,6 +168,16 @@
   \section{\textbf{PROJECTS}}
   \resumeSubHeadingListStart
     \resumeSubheading
+    {Hidden Studios AdTech Platform}{}
+    {Next.js, Supabase, TypeScript}{May 2025 -- Jul 2025}
+    \vspace{1pt}
+    \resumeItemListStart
+        \resumeItem{Built a backend data model for campaign scheduling, including tables for campaigns, ads, time slots, and linked media}
+        \resumeItem{Implemented ad impression and forecast logic by scraping Fortnite.gg player-count data through custom API endpoints}
+        \resumeItem{Decomposed a 1500+ line Next.js dashboard into modular components, fixing critical workflow bugs (incorrect game ID mapping, scheduler desync, forecast parameter issues) for reliable end-to-end campaign creation}
+    \resumeItemListEnd
+
+    \resumeSubheading
     {Timestamping Video Game Eliminations with Computer Vision}{}
     {Python, LaTeX}{Apr 2025 -- Jun 2025}
     \vspace{1pt}
@@ -180,28 +185,7 @@
         \resumeItem{Curated a custom detection dataset (165 events, $\sim$1,650 frames) with color-jitter augmentation strategies}
         \resumeItem{Fine-tuned YOLOv8-nano (2.5M params) on $<$200 images, achieving 0.61 F1 and 0.49s mean temporal error, doubling precision compared to a baseline template matcher}
         \resumeItem{Engineered a lightweight inference pipeline (OpenCV + ffmpeg) that processes a 14-minute VOD in 1.5 minutes on CPU, generating highlight clips with sub-frame accuracy}
-    \resumeItemListEnd
-
-    \resumeSubheading
-    {An Exploratory Analysis of Feature Representation in Music Source Separation}{}
-    {Python, LaTeX}{Jan 2025 -- Mar 2025}
-    \vspace{1pt}
-    \resumeItemListStart
-        \resumeItem{Implemented featurization approaches (STFT, Mel-spectrogram) within a Band-Split RNN to isolate vocal tracks}
-        \resumeItem{Integrated HiFi-GAN for Mel-spectrogram inversion, improving audio reconstruction quality by reducing artifacts}
-        \resumeItem{Optimized training via PyTorch AMP, hyperparameter tuning, and data augmentation on the MUSDB18 dataset}
-    \resumeItemListEnd
-
-    \resumeSubheading
-    {Stanford Christian Students App}{}
-    {React Native, TypeScript}{Jun 2024 -- Aug 2024}
-    \vspace{1pt}
-    \resumeItemListStart
-        \resumeItem{Overhauled main React dashboard to seamlessly display daily readings, user information, and upcoming events}
-        \resumeItem{Integrated AWS Amplify backend system for user authentication, push notifications, and Bible content retrieval}
-        \resumeItem{Refactored and debugged a 50+ MB codebase, improving code modularity and maintainability}
-    \resumeItemListEnd
-
+    \resumeItemListEnd 
 
     \resumeSubheading
     {Explicit/Implicit Heap Allocator}{}
@@ -220,11 +204,11 @@
     \section{\textbf{TECHNICAL SKILLS}}
  \begin{itemize}[leftmargin=0in, label={}]
     \item{
-        \textbf{Languages}{: \small{Python, LaTeX, TypeScript, JavaScript, Lean, SQL, C++, C, HTML/CSS}} \\
+        \textbf{Languages}{: \small{Python, TypeScript, C++, SQL, C, JavaScript, HTML/CSS}} \\
         \vspace{1pt}
-        \textbf{Frameworks/Libraries}{: \small{Pandas, NumPy, Matplotlib, scikit-learn, React, React Native, Next.js}} \\
+        \textbf{Frameworks/Libraries}{: \small{React.js, Next.js, React Native, Supabase, Flask, Pandas, Scikit-learn, PyTorch, Matplotlib}} \\
         \vspace{1pt}
-        \textbf{Developer Tools}{: \small{Git, Unix, Vim, VS Code, Apache Spark, Snowflake, Jupyter Notebook, Qt Creator}} \\
+        \textbf{Developer Tools}{: \small{Git, Unix, Vim, VS Code, Apache Spark, Snowflake, Jupyter Notebook}} \\
         \vspace{1pt}
     }
  \end{itemize}
